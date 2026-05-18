@@ -1730,26 +1730,19 @@ document.querySelectorAll('input[type=range]').forEach(function(s) {
   fillSlider(s);
 });
 
-// ── TAWK CHAT ──
-function openTawkChat() {
-  if (typeof Tawk_API !== 'undefined' && Tawk_API.toggle) {
-    Tawk_API.toggle();
-  } else if (typeof Tawk_API !== 'undefined' && Tawk_API.maximize) {
-    Tawk_API.maximize();
-  }
-}
-
-if (typeof Tawk_API !== 'undefined') {
-  Tawk_API.onLoad = function(){ Tawk_API.hideWidget(); };
-} else {
-  document.addEventListener('DOMContentLoaded', function(){
-    setTimeout(function(){
-      if (typeof Tawk_API !== 'undefined' && Tawk_API.hideWidget) {
-        Tawk_API.hideWidget();
-      }
-    }, 3000);
-  });
-}
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6a0b34be0a71ec1c34c48637/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 </script>
 </body>
 </html>
